@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../assignment 1/styles /common.css">
+    <link rel="stylesheet" href="../assignment 1/styles /contact.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav class="navbar">
+            <ul>
+              <li><a href="../assignment 1/index.html" class="nav-link">Home</a></li>
+              <li><a href="../assignment 1/about.html" class="nav-link">About</a></li>
+              <li><a href="../assignment 1/contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>Contact Form</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Yoga Balance. All rights reserved.</p>
+    </footer>
+</body>
+</html>

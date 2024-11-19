@@ -1,0 +1,124 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.navbar li {
+    margin: 0 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-link.active, .nav-link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.background-section {
+    background-image: url('../images/meditation-7770253_1280.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.background-section p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.intro-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #e0f7fa;
+}
+
+.intro-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.text-content, .image-content {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+}
+
+.responsive-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+}
+
+
+.responsive-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin: 0.5rem 0;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
